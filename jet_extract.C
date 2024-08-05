@@ -8,7 +8,7 @@ R__LOAD_LIBRARY(libDelphes)
 
 void jet_extract(const char *inputFile)
 {
-  gSystem->Load("/home/kousik/Tools/Delphes-3.5.0/libDelphes.so");
+  gSystem->Load("/home/kousik/Tools/Delphes-3.5.0/libDelphes.so"); // modified as per the system directories.
 
   TChain chain("Delphes");
   chain.Add(inputFile);
